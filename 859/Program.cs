@@ -17,7 +17,7 @@ internal class Program
         for( int i = 0; i < q; i++ ) {
             WriteLine( a[int.Parse( ReadLine() )] );
         }
-        Out.Flush();
+        Out.Flush();    // バッファに溜めたものを出力
         return;
     }
 }
