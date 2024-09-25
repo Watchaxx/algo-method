@@ -15,7 +15,7 @@ internal class Program
     /// <summary>
     /// 最大公約数
     /// </summary>
-    static long Gcd( long a, long b )
+    static decimal Gcd( long a, long b )
     {
         return b == 0 ? a : Gcd( b, a % b );
     }
@@ -23,7 +23,7 @@ internal class Program
     /// <summary>
     /// 最小公倍数
     /// </summary>
-    static long Lcm( long a, long b )
+    static decimal Lcm( long a, long b )
     {
         return a / Gcd( a, b ) * b;
     }
