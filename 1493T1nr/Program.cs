@@ -32,8 +32,8 @@ internal class Program
             }
         }
         while( true ) {
-            o.Add( f[o[o.Count - 1]] );
-            if( f[o[o.Count - 1]] == -1 ) {
+            o.Add( f[o.Last()] );
+            if( f[o.Last()] == -1 ) {
                 break;
             }
         }
