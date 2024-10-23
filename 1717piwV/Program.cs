@@ -37,8 +37,7 @@ internal class Program
                 o += ia2[i][j];
             }
         }
-        l = l.OrderBy( x => x.W ).ToList();
-        l.Reverse();
+        l = l.OrderByDescending( x => x.W ).ToList();
         foreach( int i in Enumerable.Range( 0, m ) ) {
             Edge t = l[i];
 
