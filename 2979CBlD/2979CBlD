@@ -1,0 +1,7 @@
+with alldata as (
+    select * from expenses_april union all
+    select * from expenses_may union all
+    select * from expenses_june
+)
+select category as "カテゴリ", sum(amount) as "支出額" from alldata
+group by category order by "支出額" desc
