@@ -1,0 +1,2 @@
+select * from users
+where name like "%RURU" and rank is null and flg_data_public = 1
