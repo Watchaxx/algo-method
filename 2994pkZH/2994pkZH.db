@@ -1,0 +1,7 @@
+select subject as 科目,
+count(90 <= score or null) as 秀,
+count(score between 80 and 89 or null) as 優,
+count(score between 65 and 79 or null) as 良,
+count(score between 50 and 64 or null) as 可,
+count(score < 50 or null) as 不可
+from grades group by subject
