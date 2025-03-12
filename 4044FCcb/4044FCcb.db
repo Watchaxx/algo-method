@@ -1,0 +1,2 @@
+select rank() over( order by score desc, id ) as 順位, name as 名前, score as スコア from results
+order by 順位 limit 20 offset 40
