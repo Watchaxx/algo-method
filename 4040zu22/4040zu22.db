@@ -1,0 +1,4 @@
+update grades set score = 25
+where problem_id = 1;
+select name as 名前, sum( score ) as 合計点 from grades
+group by name;
