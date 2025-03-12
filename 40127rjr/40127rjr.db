@@ -1,0 +1,8 @@
+select * from posts
+where author = (
+    select author from posts
+    where faves = (
+        select max( faves ) from posts
+    )
+)
+order by date desc limit 5
